@@ -24,8 +24,8 @@ RSpec.describe Dish, type: :model do
       DishIngredient.create(dish: tots, ingredient: potato)
       DishIngredient.create(dish: tots, ingredient: lime)
       DishIngredient.create(dish: tots, ingredient: chili)
-      
-      expect(tots.total_calories).to eg(110)
+
+      expect(tots.total_calories).to eq(110)
     end
   end
 end
